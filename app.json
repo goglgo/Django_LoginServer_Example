@@ -1,0 +1,8 @@
+{
+    "name": "Python Django Login Server Sample",
+    "description": "Signin / Sinup Sample",
+    "repository": "https://github.com/goglgo/Django_LoginServer_Example",
+    "logo": "https://node-js-sample.herokuapp.com/node.png",
+    "keywords": ["python", "login", "django"]
+  }
+  
