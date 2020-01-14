@@ -1,8 +1,22 @@
 {
-    "name": "Python Django Login Server Sample",
-    "description": "Signin / Sinup Sample",
+    "name": "Django Login Server Example",
+    "description": "A Example of Login / Signup ",
     "repository": "https://github.com/goglgo/Django_LoginServer_Example",
-    "logo": "https://node-js-sample.herokuapp.com/node.png",
-    "keywords": ["python", "login", "django"]
-  }
-  
+    "keywords": ["django", "signin", "signup"],
+    "scripts": {
+        "postdeploy": "python manage.py migrate"
+    },
+    "env": {
+        "SECRET_KEY": {
+            "description": "Django's SECRET_KEY setting",
+            "generator": "secret"
+        }
+    },
+    "addons": ["heroku-postgresql", "heroku-redis"],
+    "formation": {
+        "web": {
+            "quantity": 1,
+          " size": "Free"
+        }
+    }
+}
