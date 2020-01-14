@@ -18,8 +18,8 @@ from django.urls import path
 from accounts import views as auth_view
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('', auth_view.signin, name='home'),
+    path('admin/', admin.site.urls),
     path('signup/', auth_view.signup, name='signup'),
     path('signin/', auth_view.signin, name='signin'),
     
