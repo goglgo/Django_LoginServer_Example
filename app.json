@@ -12,7 +12,7 @@
             "generator": "secret"
         }
     },
-    "addons": ["heroku-postgresql", "heroku-redis"],
+    "addons": ["heroku-postgresql"],
     "formation": {
         "web": {
             "quantity": 1,
