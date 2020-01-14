@@ -51,7 +51,7 @@ def signin(request):
                 'id':username,
                 'user_type':user.profile.user_type
             }
-            return res
+            return JsonResponse(res)
             # return redirect('index')
         else:
             # return HttpResponse('로그인 실패. 다시 시도 해보세요.')
